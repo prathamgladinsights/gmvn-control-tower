@@ -60,7 +60,7 @@ export function Sidebar({ role }: { role: 'super_admin' | 'property_manager' }) 
 
       {/* User */}
       <div className="px-4 py-4 border-t border-indigo-900 flex items-center gap-3">
-        <UserButton afterSignOutUrl="/sign-in" />
+       <UserButton />
         <div className="text-indigo-300 text-xs">
           {role === 'super_admin' ? 'Super Admin' : 'Property Manager'}
         </div>
